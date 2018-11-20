@@ -1,0 +1,9 @@
+
+<h1>Welcome to the Users Index</h1>
+
+<% @users.each do |user| %>
+<div>
+  <h3><a href="/users/<%= user.id %>"><%= user.name %></a></h3>
+  <p><%= user.age %></p>
+</div>
+<% end %>
